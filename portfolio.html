@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="assets/favicon.svg" sizes="192x192" type="image/svg+xml">
+  <title>Lewis.dev</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+    * {
+      font-family: 'Montserrat', sans-serif;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      color: white;
+      background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+      overflow-x: hidden;
+    }
+
+    nav {
+      height: 10vh;
+      background-color: rgba(0, 0, 0, 0.7);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 40px;
+      z-index: 1000;
+      backdrop-filter: blur(8px);
+    }
+
+    .logo a {
+      font-size: 26px;
+      font-weight: bold;
+      color: #00bcd4;
+      text-decoration: none;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+    }
+
+    ul li a {
+      margin: 0 15px;
+      color: white;
+      font-size: 18px;
+      transition: 0.3s;
+      text-decoration: none;
+    }
+
+    ul li a:hover {
+      color: #00bcd4;
+      border-bottom: 2px solid #00bcd4;
+    }
+
+    section {
+      min-height: 100vh;
+      padding: 120px 10%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .home {
+      text-align: left;
+    }
+
+    .intro {
+      font-weight: bold;
+      font-size: 60px;
+    }
+
+    .headline {
+      font-size: 28px;
+      margin-top: 15px;
+      color: #ddd;
+    }
+
+    .location {
+      font-size: 20px;
+      margin-top: 10px;
+      color: #bbb;
+    }
+
+    .resume-btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 30px;
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+      background: transparent;
+      border: 2px solid #00bcd4;
+      border-radius: 6px;
+      transition: 0.3s;
+      width: fit-content;
+    }
+
+    .resume-btn:hover {
+      background: #00bcd4;
+      color: #0f2027;
+      transform: scale(1.05);
+    }
+
+    .heading {
+      font-size: 50px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #00bcd4;
+    }
+
+    .content {
+      font-size: 20px;
+      max-width: 800px;
+      line-height: 1.6;
+      color: #eee;
+    }
+
+    .list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin: 20px 0;
+    }
+
+    .element {
+      background: rgba(255, 255, 255, 0.1);
+      border: 2px solid #00bcd4;
+      border-radius: 10px;
+      padding: 10px 20px;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    .element:hover {
+      background: #00bcd4;
+      color: #0f2027;
+      transform: translateY(-5px);
+    }
+
+    footer {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer h5 {
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    footer .socials {
+      margin-top: 10px;
+    }
+
+    footer .socials a {
+      margin: 0 10px;
+      color: #00bcd4;
+      font-size: 20px;
+      text-decoration: none;
+    }
+
+    @media(max-width: 768px) {
+      .intro {
+        font-size: 40px;
+      }
+      .headline {
+        font-size: 20px;
+      }
+      nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 20px;
+      }
+      ul {
+        flex-direction: column;
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <a href="#home">Lewis.dev</a>
+    </div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skill">Skills</a></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="home">
+    <div class="intro">Hello, I'm <br> Samuel Lewis <br> Software Developer</div>
+    <div class="headline">CSE Undergrad @ SJEC'25 | Fullstack & ML Enthusiast</div>
+    <div class="location">📍 Bengaluru, Karnataka</div>
+    <a class="resume-btn" href="assets/resume.pdf" target="_blank">View Resume</a>
+  </section>
+
+  <section id="about">
+    <div class="heading">About Me</div>
+    <div class="content">
+      I started with HTML, CSS, and JavaScript, and expanded into Flask APIs, SQL, and Python libraries like Pandas, NumPy, Matplotlib, and Scikit-learn. 
+      I love solving problems with code, turning data into insights, and exploring machine learning as I grow toward an AI/ML career. 
+      Always eager to learn, collaborate, and build meaningful projects—let’s connect!
+    </div>
+  </section>
+
+  <section id="skill">
+    <div class="heading">Techstack</div>
+    <div class="subheading">Languages</div>
+    <div class="list">
+      <div class="element">C</div>
+      <div class="element">Python</div>
+      <div class="element">HTML/CSS</div>
+      <div class="element">JavaScript</div>
+    </div>
+    <div class="subheading">Libraries / Frameworks</div>
+    <div class="list">
+      <div class="element">Flask</div>
+      <div class="element">Pandas</div>
+      <div class="element">NumPy</div>
+      <div class="element">Matplotlib</div>
+      <div class="element">Seaborn</div>
+    </div>
+    <div class="subheading">Databases</div>
+    <div class="list">
+      <div class="element">MySQL</div>
+    </div>
+  </section>
+
+  <footer>
+    <h5>&copy; 2025 Samuel Lewis. Crafted with ❤️</h5>
+    <div class="socials">
+      <a href="https://github.com/samuel23lewis" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/samuel-lewis-29834237a/" target="_blank">LinkedIn</a>
+      <a href="mailto:samuel23lewis@gmail.com">Email</a>
+    </div>
+  </footer>
+</body>
+</html>
